@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.7.0 on darwin)" generated="20201106 11:35:43.175" rpa="false">
+<suite id="s1" name="Google-G3" source="/Volumes/KORN/year3/sem1-work/softV/swt-workshop/ui-test/google/google-g3.robot">
+<test id="s1-t1" name="Test search keyword and verify search results on Google">
+<kw name="พิมพ์ google.com" library="resource-g3">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20201106 11:35:43.434" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com'.</msg>
+<status status="PASS" starttime="20201106 11:35:43.433" endtime="20201106 11:35:47.748"></status>
+</kw>
+<status status="PASS" starttime="20201106 11:35:43.433" endtime="20201106 11:35:47.749"></status>
+</kw>
+<kw name="พิมพ์คำค้น USElection2020" library="resource-g3">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>q</arg>
+<arg>${KEYWORD}</arg>
+</arguments>
+<msg timestamp="20201106 11:35:47.752" level="INFO">Typing text 'USElection2020' into text field 'q'.</msg>
+<status status="PASS" starttime="20201106 11:35:47.752" endtime="20201106 11:35:48.124"></status>
+</kw>
+<status status="PASS" starttime="20201106 11:35:47.750" endtime="20201106 11:35:48.124"></status>
+</kw>
+<kw name="กด Enter" library="resource-g3">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name:q</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20201106 11:35:48.126" level="INFO">Sending key(s) ('RETURN',) to name:q element.</msg>
+<msg timestamp="20201106 11:35:48.435" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20201106 11:35:48.436" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20201106 11:35:48.125" endtime="20201106 11:35:50.030"></status>
+</kw>
+<status status="PASS" starttime="20201106 11:35:48.125" endtime="20201106 11:35:50.031"></status>
+</kw>
+<kw name="ตรวจสอบ US Election 2020 - BBC News" library="resource-g3">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${EXPECTED_RESULT}</arg>
+</arguments>
+<msg timestamp="20201106 11:35:50.364" level="INFO">Current page contains text 'US Election 2020 - BBC News'.</msg>
+<status status="PASS" starttime="20201106 11:35:50.035" endtime="20201106 11:35:50.364"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201106 11:35:50.364" endtime="20201106 11:35:50.510"></status>
+</kw>
+<status status="PASS" starttime="20201106 11:35:50.031" endtime="20201106 11:35:50.511"></status>
+</kw>
+<status status="PASS" starttime="20201106 11:35:43.431" endtime="20201106 11:35:50.511" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201106 11:35:43.179" endtime="20201106 11:35:50.514"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Google-G3">Google-G3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

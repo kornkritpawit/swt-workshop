@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.7.0 on darwin)" generated="20201107 22:04:28.474" rpa="false">
+<suite id="s1" name="Facebook" source="/Volumes/KORN/year3/sem1-work/softV/swt-workshop/ui-test/facebook.robot">
+<test id="s1-t1" name="Test login facebook">
+<kw name="พิมพ์ facebook.com">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20201107 22:04:29.278" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20201107 22:04:29.278" endtime="20201107 22:04:35.163"></status>
+</kw>
+<status status="PASS" starttime="20201107 22:04:29.277" endtime="20201107 22:04:35.164"></status>
+</kw>
+<kw name="พิมพ์ facebook email password">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>${EMAIL}</arg>
+</arguments>
+<msg timestamp="20201107 22:04:35.167" level="INFO">Typing text 'konsoo@hotmail.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20201107 22:04:35.166" endtime="20201107 22:04:35.496"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>pass</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20201107 22:04:35.496" level="INFO">Typing text 'Korngun42616' into text field 'pass'.</msg>
+<status status="PASS" starttime="20201107 22:04:35.496" endtime="20201107 22:04:35.648"></status>
+</kw>
+<status status="PASS" starttime="20201107 22:04:35.164" endtime="20201107 22:04:35.648"></status>
+</kw>
+<kw name="กด Enter">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name:pass</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20201107 22:04:35.650" level="INFO">Sending key(s) ('RETURN',) to name:pass element.</msg>
+<msg timestamp="20201107 22:04:35.941" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20201107 22:04:35.941" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20201107 22:04:35.649" endtime="20201107 22:04:35.971"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>css:div.oajrlxb2.b3i9ofy5</arg>
+</arguments>
+<status status="PASS" starttime="20201107 22:04:35.971" endtime="20201107 22:04:39.305"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:div.oajrlxb2.b3i9ofy5</arg>
+</arguments>
+<msg timestamp="20201107 22:04:39.305" level="INFO">Clicking element 'css:div.oajrlxb2.b3i9ofy5'.</msg>
+<status status="PASS" starttime="20201107 22:04:39.305" endtime="20201107 22:04:39.685"></status>
+</kw>
+<status status="PASS" starttime="20201107 22:04:35.648" endtime="20201107 22:04:39.686"></status>
+</kw>
+<kw name="พิม Post">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>css:div.scb9dxdr.dhix69tm</arg>
+</arguments>
+<status status="PASS" starttime="20201107 22:04:39.687" endtime="20201107 22:04:41.192"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>${POST}</arg>
+</arguments>
+<msg timestamp="20201107 22:04:41.193" level="INFO">Sending key(s) ('สวัสดี Robot framework',) to page.</msg>
+<msg timestamp="20201107 22:04:41.194" level="INFO">Sending keys สวัสดี Robot framework</msg>
+<status status="PASS" starttime="20201107 22:04:41.192" endtime="20201107 22:04:41.936"></status>
+</kw>
+<status status="PASS" starttime="20201107 22:04:39.686" endtime="20201107 22:04:41.937"></status>
+</kw>
+<kw name="กด Post">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:div.c98fg2ug.qu0x051f</arg>
+</arguments>
+<msg timestamp="20201107 22:04:41.938" level="INFO">Clicking element 'css:div.c98fg2ug.qu0x051f'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201107 22:04:42.772" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201107 22:04:42.024" endtime="20201107 22:04:42.773"></status>
+</kw>
+<msg timestamp="20201107 22:04:42.787" level="FAIL">Element with locator 'css:div.c98fg2ug.qu0x051f' not found.</msg>
+<status status="FAIL" starttime="20201107 22:04:41.938" endtime="20201107 22:04:42.788"></status>
+</kw>
+<status status="FAIL" starttime="20201107 22:04:41.938" endtime="20201107 22:04:42.788"></status>
+</kw>
+<status status="FAIL" starttime="20201107 22:04:29.276" endtime="20201107 22:04:42.789" critical="yes">Element with locator 'css:div.c98fg2ug.qu0x051f' not found.</status>
+</test>
+<status status="FAIL" starttime="20201107 22:04:28.486" endtime="20201107 22:04:42.790"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Facebook">Facebook</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
